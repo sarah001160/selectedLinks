@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	a.active{
+  		color: red;
+		}
+</style>
+<body>
+	<div class="main_wrapper clearfix"> 
+		<div class="header">
+    		<h1 style="text-align:right; color:#004E96; text-shadow:yellow;" >
+    		</h1>
+		</div>
+		<div class="leftpan">
+			<div id="quickone">
+				<i class="sep"></i>
+				<li><label class="f14"><a id="page1" href="#">	Organizational Details</a></label>
+				</li>
+				<i class="sep"></i>
+				<li><label class="f14"><a id="page2" href="#">Human  Resource </a></label>
+				</li>
+				<i class="sep"></i>
+				<li><label class="f14"><a id="page3" href="#">Risk Governance Structure& Business Model</a></label></li>
+				<i class="sep"></i>
+				<li><label class="f14"><a id="page4" href="#" >Customer Profile, Service,  Complaints and Frauds</a></label></li>
+				<i class="sep"></i>
+				<li><label class="f14"><a id="page5" href="#" >Balance Sheet & Profit and Poss</a></label></li>
+			</div>
+		</div>
+<!--<div id="showData" style="clear:both;overflow:scroll;" class="divdata"></div>-->
+<br>
+<br>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</body>
+<script>
+	$(document).ready(function(){
+  		$a = $("#quickone").find('a');
+  		$a.click(function(){
+   		 	$a.removeClass("active");
+   		 	$(this).addClass("active");;
+  		});
+	});
+
+</script>
+</html>
