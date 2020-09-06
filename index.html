@@ -6,8 +6,13 @@
 	<title>Document</title>
 </head>
 <style>
+	a{
+		display:block;
+		width:500px;
+		height:30px;
+	}
 	a.active{
-  		color: red;
+  		background:yellow;
 		}
 </style>
 <body>
@@ -39,9 +44,9 @@
 </body>
 <script>
 	$(document).ready(function(){
-  		$a = $("#quickone").find('a');
-  		$a.click(function(){
-   		 	$a.removeClass("active");
+  		var a = $("#quickone").find('a');
+  		a.click(function(){
+   		 	a.removeClass("active");
    		 	$(this).addClass("active");;
   		});
 	});
